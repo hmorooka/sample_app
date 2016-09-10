@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class StaticPagesControllerTest < ActionController::TestCase
-  test "getリクエスト送ったら何らかのhtmlが返ってくるか？というテスト" do
+  test "getリクエスト送ったら何らかの、htmlが返ってくるか？というテスト" do
     get :home
     assert_response :success
     assert_select "title", "Ruby on Rails Tutorial Sample App"
